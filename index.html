@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jass Sangale | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Jass Sangale</h1>
-    <p>Cyber Security Student | Developer | Learner</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#articles">Articles</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+      <h1 class="logo">Jass Sangale</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="about">
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hey, I'm <span>Jass Sangale</span></h2>
+      <p>Cyber Security Enthusiast | Web Developer | Innovator</p>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      Hi! I'm <strong>Jass Sangale</strong>, a Cyber Security student passionate about ethical hacking,
-      secure coding, and building projects that make technology safer and smarter. 
-      I enjoy creating awareness about cyber safety and developing web-based security applications.
+      I'm Jass Sangale, a passionate Cyber Security student who loves exploring
+      digital safety, ethical hacking, and innovative projects. I focus on spreading
+      awareness about online security through creative initiatives and hands-on work.
     </p>
   </section>
 
-  <section id="articles">
+  <section id="articles" class="section">
     <h2>My Articles</h2>
+    <p>Check out my work published on GitHub:</p>
+    <a href="https://github.com/JassSangale" target="_blank" class="btn">View My Articles</a>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out!</p>
     <ul>
-      <li><a href="https://github.com/JassSangale/article-1" target="_blank">🔗 Understanding Identity Theft — Cyber Awareness Article</a></li>
-      <li><a href="https://github.com/JassSangale/article-2" target="_blank">🔗 Cyber Suraksha Nukkad Natak — Behind the Scenes</a></li>
-      <li><a href="https://github.com/JassSangale/article-3" target="_blank">🔗 Exploring Malware Detection using SVM — Project Write-up</a></li>
+      <li>Email: <a href="mailto:jass04sangle@gmail.com">jass04sangle@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://in.linkedin.com/in/jass-sangale-3a342128b" target="_blank">View Profile</a></li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>📧 Email: <a href="mailto:jass04sangle@gmail.com">jass04sangle@gmail.com</a></p>
-    <p>💼 LinkedIn: <a href="https://in.linkedin.com/in/jass-sangale-3a342128b" target="_blank">linkedin.com/in/jass-sangale-3a342128b</a></p>
-    <p>💻 GitHub: <a href="https://github.com/JassSangale" target="_blank">github.com/JassSangale</a></p>
-  </section>
-
   <footer>
-    <p>© <span id="year"></span> Jass Sangale | Built with ❤️ using GitHub Pages</p>
+    <p>© 2025 Jass Sangale | Built with ❤️ using HTML, CSS & JS</p>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
