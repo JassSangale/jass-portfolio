@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Jass Sangale</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="fade-in">
+<nav class="nav">
+  <div class="brand" onclick="goHome()">Jass Sangale</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <h2>Contact</h2>
+  <p class="lead">Want to collaborate or see my code? Reach out.</p>
+  <div class="contact-cards">
+    <div class="card small">
+      <h4>Email</h4>
+      <p><a href="mailto:jass.18162@sakec.ac.in">jass.18162@sakec.ac.in</a></p>
+    </div>
+    <div class="card small">
+      <h4>LinkedIn</h4>
+      <p><a href="https://in.linkedin.com/in/jass-sangale-3a342128b" target="_blank">in/jass-sangale-3a342128b</a></p>
+    </div>
+    <div class="card small">
+      <h4>GitHub</h4>
+      <p><a href="https://github.com/JassSangale" target="_blank">github.com/JassSangale</a></p>
+    </div>
+  </div>
+
+  <form class="contact-form" onsubmit="sendMail(event)">
+    <label>Name<input type="text" id="name" required></label>
+    <label>Message<textarea id="message" rows="5" required></textarea></label>
+    <button class="btn" type="submit">Send (opens mail)</button>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <p><a href="index.html">← Back home</a></p>
+</footer>
+<script>
+function sendMail(e){e.preventDefault();const subj=encodeURIComponent('Portfolio contact from web');const body=encodeURIComponent('Name: '+document.getElementById('name').value+'\n\n'+document.getElementById('message').value);window.location='mailto:jass.18162@sakec.ac.in?subject='+subj+'&body='+body;}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
