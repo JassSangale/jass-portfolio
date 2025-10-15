@@ -1,71 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Jass Sangale — Portfolio</title>
-<link rel="icon" href="assets/favicon.svg">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Jass Sangale</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-<nav class="nav">
+<body class="fade-in">
+<nav class="nav" role="navigation">
   <div class="brand" onclick="goHome()">Jass Sangale</div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
     <li><a href="articles.html">Articles</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
 </nav>
 
-<header class="hero">
-  <div class="hero-left">
-    <h1 class="title">Hey — I'm <span class="accent">Jass Sanjay Sangale</span></h1>
-    <p class="subtitle">CYSE — 3rd Year | Aspiring Cybersecurity Engineer</p>
-    <p class="lead">I build secure systems, explore digital forensics, and write about modern security practices. Welcome to my animated portfolio — clone, edit, and deploy.</p>
-    <div class="cta-row">
-      <a class="btn" href="projects.html">See Projects</a>
-      <a class="btn ghost" href="https://github.com/JassSangale" target="_blank" rel="noopener">My GitHub</a>
-    </div>
-    <div class="socials">
-      <a href="https://in.linkedin.com/in/jass-sangale-3a342128b" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/JassSangale" target="_blank">GitHub</a> ·
-      <a href="mailto:jass.18162@sakec.ac.in">Email</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="card floating">
-      <!-- SVG avatar -->
-      <img src="assets/avatar.svg" alt="Jass avatar" class="avatar">
-      <div class="card-info">
-        <h3>Jass Sanjay Sangale</h3>
-        <p>CYSE — 3rd Year</p>
-      </div>
-    </div>
-  </div>
-</header>
+<main class="container">
+  <h2 class="accent-gradient">Selected Projects</h2>
+  <p class="lead">A few highlighted projects. Visit my GitHub for full source and more repositories.</p>
 
-<section class="features">
-  <article class="feature">
-    <h3>Animated Pages</h3>
-    <p>Smooth transitions, scroll reveals, and micro-interactions across the whole site.</p>
-  </article>
-  <article class="feature">
-    <h3>Projects & Code</h3>
-    <p>Links to GitHub and demos for each highlighted project. Deployable as static site.</p>
-  </article>
-  <article class="feature">
-    <h3>Articles & Notes</h3>
-    <p>Curated write-ups and short tutorials on cybersecurity topics.</p>
-  </article>
-</section>
+  <div class="grid projects-grid">
+    <article class="project-card reveal">
+      <h3>PDF Password Auditor</h3>
+      <p>A small toolkit that demonstrates password strength assessment for PDFs — automation scripts + reporting. (Inspired by coursework.)</p>
+      <div class="meta">Tech: Python, Bash</div>
+      <a class="card-link" href="https://github.com/JassSangale" target="_blank">View on GitHub →</a>
+    </article>
+    <article class="project-card reveal">
+      <h3>Forensic Image Collector</h3>
+      <p>A disk image collection helper with organized artifact extraction steps and reproducible reporting.</p>
+      <div class="meta">Tech: Autopsy, Python</div>
+      <a class="card-link" href="https://github.com/JassSangale" target="_blank">View on GitHub →</a>
+    </article>
+    <article class="project-card reveal">
+      <h3>OWASP Demo App</h3>
+      <p>Vulnerable web app fork used for testing and teaching common vulnerabilities (with fixes documented).</p>
+      <div class="meta">Tech: Node, Express</div>
+      <a class="card-link" href="https://github.com/JassSangale" target="_blank">View on GitHub →</a>
+    </article>
+  </div>
+  <p class="note">Tip: Replace project descriptions and links with your repo URLs to showcase live work.</p>
+</main>
 
 <footer class="site-footer">
-  <p>Made with ✨ by Jass — <a href="contact.html">Get in touch</a></p>
+  <p><a href="index.html">← Back home</a></p>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
